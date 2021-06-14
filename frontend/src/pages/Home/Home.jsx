@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Calendar from 'react-calendar'
 import moment from 'moment'
 import Header from '../../components/Header/Header'
-// import ViewAddEngineer from '../../components/Modal/ViewEngineer'
 import Modal from '../../components/Modal/Modal'
 import 'react-calendar/dist/Calendar.css';
 import './Home.css'
@@ -18,20 +17,22 @@ const ViewEngineers = ({ data }) => {
                 <div>Last Name</div>
             </div>
             <div className='user-content-container'>
-                {data.length && data.map((user) => {
-                    const { firstName, lastName, email } = user
-                    return (
-                        <div>
-                            <ul
-                                className='user-content'
+                <ul
+                    className='user-content'
+                >
+                    {data.length && data.map((user, index) => {
+                        const { firstName, lastName, email } = user
+                        return (
+                            <li
+                                key={email}
                             >
-                                <li>{email}</li>
-                                <li>{firstName}</li>
-                                <li>{lastName}</li>
-                            </ul>
-                        </div>
-                    )
-                })}
+                                <span>{email}</span>
+                                <span>{firstName}</span>
+                                <span>{lastName}</span>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
         </>
     )
@@ -159,7 +160,7 @@ const Home = () => {
                             {workingToday.length ? workingToday.map(data => {
                                 const { email, time } = data
                                 return (
-                                    <li>{email} ( {time} )</li>
+                                    <li key={email}>{email} ( {time} )</li>
                                 )
                             }) : <div>No one working.</div>}
                         </ul>
@@ -181,6 +182,7 @@ const Home = () => {
                                     <li
                                         className={changeShift ? 'active-shift-element shift-element' : 'shift-element'}
                                         onClick={switchShift}
+                                        key={`${email}-${date}-${time}`}
                                     >
                                         <div>
                                             <div>{date} - {time}</div>

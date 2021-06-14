@@ -1,10 +1,5 @@
 .info-date-container {
     text-align: start;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    /* width: 50% */
-    /* align-items: flex-start; */
 }
 
 .calendar-container {
@@ -37,14 +32,12 @@
 
 .shift-container {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
 }
 
 .shift-element {
     border-bottom: 0.7px solid rgb(241, 241, 241);
     list-style-type: none;
-    /* width: 100%; */
     text-align: 'start';
     display: flex;
     justify-content: space-around;
@@ -68,9 +61,21 @@
     color: red
 }
 
+.user-content-header div {
+    padding-left: 20px;
+}
+
 .user-content-container {
     overflow: scroll;
-    height: 50%
+    height: 70%;
+    margin-top: 10px
+}
+
+.user-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%
 }
 
 .active-shift-element:hover {
@@ -121,7 +126,6 @@
 .view-add-info-container div {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: 50%;
     margin: 0 auto;
     margin-bottom: 20px;

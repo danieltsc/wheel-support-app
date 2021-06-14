@@ -13,10 +13,14 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 50%;
+    height: 70%;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+}
+
+.content {
+    height: 100%
 }
 
 .toggle-button {
@@ -24,7 +28,6 @@
     padding: 8px 25px 8px 25px;
     color: white;
     transition: color .2s ease-out, background-color .2s ease-out;
-    /* transition: background-color .2s ease-out; */
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
@@ -33,11 +36,11 @@
     color: black;
     background-color: white;
     transition: color .2s ease-in, background-color .2s ease-in;
-    /* transition: background-color .2s ease-in; */
 }
 
 .info-view {
     width: 100%;
+    height: 100%
 }
 
 .info-view h2 {
@@ -58,24 +61,28 @@
 .user-content-header div {
     width: 33%;
     display: flex;
-    justify-content: center;
 }
 
 .user-content {
     display: flex;
-    /* justify-content: space-between; 
-    align-content: flex-start; */
+    justify-content: space-between; 
     list-style-type: none;
     border-bottom: 0.7px solid rgb(241, 241, 241);
     margin-top: 15px;
     padding-bottom: 5px;
-    /* text-align: start; */
 }
 
 .user-content li {
-    width: 33%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.user-content li span {
+    width: 33%;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid grey;
 }
 
 .toggle-button {
@@ -85,6 +92,4 @@
 ul {
     margin: 0;
     padding: 0
-    /* margin: 10, 10;
-    padding: 10, 10; */
 }

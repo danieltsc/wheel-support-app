@@ -6,11 +6,11 @@ const Modal = ({ children, onClose, title }) => {
             <div className='modal-view'>
                 <div className='info-view'>
                     <h2>{title}</h2>
-                    <div class="content">{children}</div>
+                    <div className="content">{children}</div>
                 </div>
                 <div>
-                    <div class="actions">
-                        <button class="toggle-button" onClick={onClose}>
+                    <div className="actions">
+                        <button className="toggle-button" onClick={onClose}>
                             Close
                     </button>
                     </div>
