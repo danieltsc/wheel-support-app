@@ -1,0 +1,18 @@
+version: '3'
+services:
+    backend:
+        image: danitomescu/ec2-backend
+        container_name: backend
+        ports:
+            - 5000:5000
+        networks: 
+            - my-app
+    frontend:
+        image: danitomescu/frontend-ec2
+        container_name: frontend
+        ports:
+            - 80:80
+        networks:
+            - my-app
+networks:
+    my-app:

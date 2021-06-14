@@ -1,0 +1,52 @@
+[
+    {
+        "email": "john.doe@gmail.com",
+        "firstName": "John",
+        "lastName": "Doe"
+    },
+    {
+        "email": "lhaw1@ezinearticles.com",
+        "firstName": "Alberto",
+        "lastName": "Tomek"
+    },
+    {
+        "email": "dgigg2@ed.gov",
+        "firstName": "Lanny",
+        "lastName": "Haw"
+    },
+    {
+        "email": "gdebera@gmail.com",
+        "firstName": "Debera",
+        "lastName": "Gigg"
+    },
+    {
+        "email": "tgoldney3@ebay.co.uk",
+        "firstName": "Trevor",
+        "lastName": "Goldney"
+    },
+    {
+        "email": "blacroce4@hhs.gov",
+        "firstName": "Bren",
+        "lastName": "La Croce"
+    },
+    {
+        "email": "gfincken5@msn.com",
+        "firstName": "Georges",
+        "lastName": "Fincken"
+    },
+    {
+        "email": "hreolfo6@marketwatch.com",
+        "firstName": "Hughie",
+        "lastName": "Reolfo"
+    },
+    {
+        "email": "cbedinham7@howstuffworks.com",
+        "firstName": "Catarina",
+        "lastName": "Bedinham"
+    },
+    {
+        "email": "ntriswell8@freewebs.com",
+        "firstName": "Nat",
+        "lastName": "Triswell"
+    }
+]
