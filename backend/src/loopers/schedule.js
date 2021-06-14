@@ -6,7 +6,7 @@ const Scheduler = require('../models/scheduler')
 
 let sortedUsers = []
 
-let finalOrder = () => ({})
+let finalOrder = {}
 
 const schedulerPerWorkingDay = (days) => {
     const scheduler = []
@@ -77,7 +77,7 @@ const addInDb = async () => {
             { email: finalOrder[day].morning, date: day, time: 'morning' },
             { email: finalOrder[day].afternoon, date: day, time: 'afternoon' },
         ])).flat()
-        await Scheduler.insertMany(docToInsert)
+        // await Scheduler.insertMany(docToInsert)
 
     } catch (e) {
         console.log('ERROR: ', e)
@@ -92,7 +92,7 @@ const setUsers = async () => {
 
 const run = async () => {
     await setUsers()
-    finalOrder = finalOrder()
+    finalOrder = {}
     setProgram()
     let reiterate = areAnyIssues()
 
