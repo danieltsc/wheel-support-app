@@ -1,6 +1,6 @@
 import { create } from 'axios'
 const api = create({
-    baseURL: 'http://52.26.1.84:5000/'
+    baseURL: 'http://localhost:5000/'
 })
 
 export const getUsers = async () => {
