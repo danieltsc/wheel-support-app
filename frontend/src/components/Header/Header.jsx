@@ -1,7 +1,4 @@
-import { useState } from 'react'
 import './Header.css'
-import { addEngineer } from '../../utils/api-requests/api-requests'
-import Modal from '../Modal/Modal'
 
 const Header = ({ showEngineers, showAddEngineer }) => {
     return (

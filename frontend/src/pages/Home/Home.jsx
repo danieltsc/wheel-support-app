@@ -122,13 +122,7 @@ const Home = () => {
 
         }
     }
-    const addNewEngineer = async ({ email, firstName, lastName }) => {
-        try {
 
-        } catch (e) {
-
-        }
-    }
     const showAddEngineer = () => {
         try {
             setModalProps({ ...modalProps, title: 'Add Engineer', children: () => <ViewAddEngineer /> })
@@ -160,9 +154,6 @@ const Home = () => {
                 />
                 <div className={'info-date-container'}>
                     <div>
-                        {/* <p style={{ color: 'rgb(175, 24, 212)' }}>
-                            Selected date is {moment(selectedDate).format('YYYY-MM-DD')}
-                        </p> */}
                         <div className='work-today-message'>Working on {moment(selectedDate).format('YYYY-MM-DD')}</div>
                         <ul className='work-today-people'>
                             {workingToday.length ? workingToday.map(data => {
@@ -173,9 +164,6 @@ const Home = () => {
                             }) : <div>No one working.</div>}
                         </ul>
                     </div>
-                    {/* <div>
-                        lala
-                    </div> */}
                 </div>
             </div>
             <div>
@@ -194,10 +182,7 @@ const Home = () => {
                                         className={changeShift ? 'active-shift-element shift-element' : 'shift-element'}
                                         onClick={switchShift}
                                     >
-                                        <div
-                                        // className={changeShift ? 'active-shift-element' : ''}
-
-                                        >
+                                        <div>
                                             <div>{date} - {time}</div>
                                             <div className='user-email'>{email}</div>
                                         </div>
