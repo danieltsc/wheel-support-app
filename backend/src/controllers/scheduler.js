@@ -4,6 +4,7 @@ const { run } = require('../loopers/schedule')
 
 module.exports = {
     getSchedule: async (req, res, next) => {
+        // Get schedule for who works for the next 5 days
         const {
             date = moment().format('YYYY-MM-DD'),
             filters = {}
@@ -31,6 +32,7 @@ module.exports = {
         }
     },
     scheduleManually: async (req, res, next) => {
+        // Trigger scheduler looper manually from API
         try {
             await run()
             res.json({ message: `Scheduler ran successfully.` })

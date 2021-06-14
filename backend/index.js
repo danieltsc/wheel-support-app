@@ -15,12 +15,16 @@ app.get('/health', (req, res) => {
     res.send('Alive and well :)')
 })
 
+// Get all users
 app.get('/users', userController.getUsers)
 
+// Add new user
 app.post('/user', userController.addUser)
 
+// Get schedule
 app.get('/schedule', scheduleController.getSchedule)
 
+// Schedule manually (option only for testing with postman)
 app.post('/schedule-manually', scheduleController.scheduleManually)
 
 

@@ -2,6 +2,7 @@ const User = require('../models/user')
 
 module.exports = {
     getUsers: async (req, res, next) => {
+        // Get all users
         try {
             const data = await User.find({})
             res.json({ data })
@@ -11,6 +12,7 @@ module.exports = {
         }
     },
     addUser: async (req, res, next) => {
+        // Add specific user
         const { email, firstName, lastName } = req.body
         const toReturn = {}
         try {
