@@ -1,0 +1,153 @@
+.info-date-container {
+    text-align: start;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* width: 50% */
+    /* align-items: flex-start; */
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.work-today-message {
+    color: red;
+    margin-top: 10px;
+}
+.work-today-people li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: red;
+}
+
+.calendar {
+    width: 40%
+}
+
+.container {
+    background-color: red;
+}
+
+.shift-container {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.shift-element {
+    border-bottom: 0.7px solid rgb(241, 241, 241);
+    list-style-type: none;
+    /* width: 100%; */
+    text-align: 'start';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.schedule-message {
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-message span {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.user-content-header {
+    color: red
+}
+
+.user-content-container {
+    overflow: scroll;
+    height: 50%
+}
+
+.active-shift-element:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer
+}
+
+.user-email {
+    margin-left: 10px;
+    margin-top: 3px;
+    opacity: 0.5;
+}
+
+.change-shift-container {
+    margin-right: 20px
+}
+
+.no-data-message {
+    display: flex;
+    justify-content: center;
+}
+
+.return-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.return-error {
+    color: red
+}
+
+.return-message {
+    color: green
+}
+
+.view-add-engineer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-add-info-container {
+    width: 100%;
+}
+
+.view-add-info-container div {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.view-add-info-container div input {
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    display: flex;
+}
+
+.add-engineer-button {
+    width: 50%;
+    align-self: center;
+    padding: 10px 5px 10px 5px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(85 156 20 / 80%);
+    transition: background-color .2s ease-out;
+    color: white;
+    cursor: pointer
+}
+
+.add-engineer-button:hover {
+    background-color: rgb(85 156 20 / 100%);
+    transition: background-color .2s ease-in
+}
