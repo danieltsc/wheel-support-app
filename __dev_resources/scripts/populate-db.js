@@ -1,15 +1,15 @@
-const mongoose = require('mongoose')
 const fs = require('fs')
+const path = require('path')
+const mongoose = require('mongoose')
 const { User } = require('./models')
 const { run } = require('./schedule')
 
+const mockUsers = JSON.parse(fs.readFileSync(path.resolve(__dirname, './mock-users.json')))
+
 const {
-    PORT = 5000,
     MONGO_USER = 'danitsc',
     MONGO_PASSWORD = 1234
 } = process.env
-
-const mockUsers = JSON.parse(fs.readFileSync('./mock-users.json'))
 
 const removeCollections = async () => {
     const collections = await mongoose.connection.db.collections()
